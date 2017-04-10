@@ -20,7 +20,7 @@ class Util {
    
    public function getDBConfig() {
        return array(
-            'DB_DNS' => 'mysql:host=localhost;port=3306;dbname=PHPAdvClassSpring2016',
+            'DB_DNS' => 'mysql:host=localhost;port=3306;dbname=PHPAdvClassSpring2017',
             'DB_USER' => 'root',
             'DB_PASSWORD' => ''
         );       
