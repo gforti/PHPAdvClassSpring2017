@@ -15,5 +15,7 @@
         ?>
         
         <h1>This is a PHP page in an I Frame</h1>
+        
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options"> Visit here</a> for more X-Frame options and info</p>
     </body>
 </html>
