@@ -21,12 +21,13 @@
             
             //hash_equals — Timing attack safe string comparison
             if ( array_key_exists($tokenKey, $_SESSION) && hash_equals($_SESSION[$tokenKey], $tokenValue) ) {
-                unset($_SESSION[$tokenKey]);
                 echo '<p>Form data is safe to process.</p>';
            } else {
                 // Log this as a warning and keep an eye on these attempts
                  echo '<p>Form data is NOT safe to process.</p>';
            }
+           // Always delete the token after use
+           unset($_SESSION[$tokenKey]);
         } 
         
         //Every time we come to the page lets create the token info.
