@@ -15,7 +15,7 @@ class JWT {
          * In minutes : (m * 60) m = number of minutes
          * In days : (n * 24 * 60 * 60 ) n = no of days            
          */
-        $payload['exp'] = time() + (5 * 60);
+        $payload['exp'] = time() + (1 * 60); // expire in one minute
 
         $header = array('type' => 'JWT', 'algo' => $this->algo);
 

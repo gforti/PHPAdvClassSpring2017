@@ -25,7 +25,7 @@ try {
     if (!in_array($resource, ['login', 'signup'])){
         
         if ( is_null($token) || !$jwt->valididateJWT($token, $secrect_key)  ) {            
-            throw new InvalidArgumentException('Please log in invalid token ' . $token);
+            throw new InvalidArgumentException('Please go to login for a new token. Token invalid: ' . $token);
         }
     }
        

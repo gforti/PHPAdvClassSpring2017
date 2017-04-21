@@ -135,7 +135,7 @@ class RestServer {
      * get access token from header
      * */
     public function getBearerToken() {
-        $headers = trim($_SERVER["HTTP_AUTHORIZATION"]);
+        $headers = isset($_SERVER["HTTP_AUTHORIZATION"]) ? trim($_SERVER["HTTP_AUTHORIZATION"]) : null;
         // HEADER: Get the access token from the header
         if (!empty($headers)) {
             if (preg_match('/Bearer\s(\S+)/', $headers, $matches)) {
