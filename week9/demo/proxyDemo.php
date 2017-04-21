@@ -86,7 +86,7 @@
                         results.value = xmlhttp.responseText;
                         var response = JSON.parse(xmlhttp.responseText);
                         
-                        if ( response && response.data.hasOwnProperty('token')) {
+                        if ( response && response.data && response.data.hasOwnProperty('token')) {
                             window.localStorage.setItem('token', response.data.token);
                         }
                     } else {
