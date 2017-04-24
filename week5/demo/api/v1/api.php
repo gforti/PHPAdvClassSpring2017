@@ -30,7 +30,7 @@ try {
      */
     if ( 'address' === $resource ) {
         
-        $resourceData = new AddressResoruce();
+        $resourceData = new AddressResource();
         
         if ( 'GET' === $verb ) {
             

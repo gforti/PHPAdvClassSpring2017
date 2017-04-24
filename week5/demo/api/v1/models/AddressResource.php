@@ -1,6 +1,6 @@
 <?php
 
-class AddressResoruce extends DBSpring implements IRestModel {
+class AddressResource extends DBSpring implements IRestModel {
     
     public function getAll() {
         $stmt = $this->getDb()->prepare("SELECT * FROM address");
