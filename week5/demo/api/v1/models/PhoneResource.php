@@ -2,6 +2,7 @@
 
 /**
  * Description of PhoneResoruce
+ * Lets implement the REST CRUD model for our API
  *
  * @author GFORTI
  */

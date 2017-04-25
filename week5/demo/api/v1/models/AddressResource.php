@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * Lets implement the REST CRUD model for our API
+ */
 class AddressResource extends DBSpring implements IRestModel {
     
     public function getAll() {
