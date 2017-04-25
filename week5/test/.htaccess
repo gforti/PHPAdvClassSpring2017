@@ -2,5 +2,9 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule twitter/(.*)$ index.php?endpoint=$1 [QSA,NC,L]
+RewriteRule cars/(.*)$ index.php?endpoint=$1 [QSA,NC,L]
+#https://httpd.apache.org/docs/current/rewrite/flags.html
+#QSA = Query String Append.
+#NC = nocase
+#L = last
 </IfModule>
