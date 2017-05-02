@@ -7,6 +7,11 @@
   
     config.$inject = ['$routeProvider'];
 
+    /*
+     * We set out custom feature with a starting page and pages
+     * that go from there.  then the URL matches the route, we update
+     * that view and process the controller
+     */
     function config($routeProvider) {
        $routeProvider.
             when('/address', {
@@ -18,9 +23,6 @@
                 templateUrl: 'js/address/address-detail.template.html',
                 controller: 'AddressDetailController',
                 controllerAs: 'vm'
-            }).
-            otherwise({
-              redirectTo: '/address'
             });
     }
 

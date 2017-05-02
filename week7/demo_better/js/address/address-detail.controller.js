@@ -7,6 +7,9 @@
 
     AddressDetailController.$inject = ['$routeParams','AddressService'];
 
+    /*
+     * This controller will find the details of an address from the address service.
+     */
     function AddressDetailController($routeParams, AddressService) {
         var vm = this;
 

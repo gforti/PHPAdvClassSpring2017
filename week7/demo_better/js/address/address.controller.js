@@ -6,7 +6,9 @@
         .controller('AddressController', AddressController);
 
     AddressController.$inject = ['AddressService'];
-
+    /*
+     * Simple controller to get information for the view.
+     */
     function AddressController(AddressService) {
         var vm = this;
 
