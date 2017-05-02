@@ -9,7 +9,7 @@
         // put your code here
         
         /* Run this file and go to
-         * go to test/twitter/gforti
+         * go to test/cars/5
          */
         
         $endpoint = filter_input(INPUT_GET, 'endpoint');
