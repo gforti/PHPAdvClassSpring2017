@@ -1,0 +1,31 @@
+<h1>Address Table</h1>
+
+<div class="content">
+    
+    <h3>Search</h3>
+    <!-- https://docs.angularjs.org/api/ng/filter/filter -->
+    <br />
+    <br /> 
+    <p>{{vm.message}}</p>
+    <table class="gridtable">
+        <thead>
+            <tr>
+                <th>Fullname</th>
+                <th>Email</th>                
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>    
+        
+        <tr ng-repeat="address in vm.addresses">
+            <td>{{address.fullname}}</td>                  
+            <td>{{address.email}}</td>
+            <td><a ng-href="#/address/{{address.address_id}}">View</a></td>
+            <td><a ng-href="#/address/delete/{{address.address_id}}" data-confirm-delete>Delete Link</a></td>
+            <td><button ng-click="vm.deleteAddress(address.address_id)">Delete</button></td>
+        </tr>
+    </table>
+        
+</div>
+
